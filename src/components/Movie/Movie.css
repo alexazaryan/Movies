@@ -30,5 +30,23 @@
 
 .movie-description {
   border-radius: 15px;
-  border-bottom: 2px solid gray;
+}
+
+.movie-box {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background: white;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1),
+    0 12px 36px rgba(0, 0, 0, 0.05);
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.movie-box:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25),
+    /* увеличенный основной оттенок при наведении */ 0 12px 36px
+      rgba(0, 0, 0, 0.15),
+    /* увеличенный второй оттенок */ 0 16px 48px rgba(0, 0, 0, 0.1); /* увеличенный самый мягкий оттенок */
+  transform: translateY(-5px); /* поднятие карточки при наведении */
 }

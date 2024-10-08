@@ -37,8 +37,16 @@ export default function Search({ searchMovie }) {
         SEARCH
       </button>
 
+      <button
+        className="btn__second"
+        onClick={() => searchMovie(search, genre, year)}
+      >
+        SEARCH
+      </button>
+
       <div className="col s12 block">
         <span className="filters-radio">Genre:</span>
+
         <div>
           <label>
             <input

@@ -2,8 +2,6 @@
 import "./SelectedMovie.css";
 
 export default function SelectedMovie({ movie }) {
-  // console.log(movie);
-
   return (
     <div className="selectedMovie-wrap">
       <div className="box-img-plot">
@@ -14,7 +12,7 @@ export default function SelectedMovie({ movie }) {
             <img className="selected-img-s1" src={movie.Poster} alt="#" />
           )}
         </div>
-        <div>
+        <div className="selectedMovie__box">
           <p className="selectedMovie-plot">
             <strong>Plot:</strong>
             {movie.Plot === "N/A" ? "Нет описания" : movie.Plot}

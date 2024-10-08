@@ -2,8 +2,7 @@
   position: relative;
   text-align: center;
   margin: 0 auto;
-  /* width: 1400px; */
-  /* flex: 1 1 auto; */
+  padding: 1rem;
 }
 
 .main-input {
@@ -19,8 +18,20 @@
 .main-btn {
   position: absolute;
   cursor: pointer;
-  top: 14px;
-  right: 10px;
+  top: 28px;
+  right: 3%;
+  width: 85px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  background-color: rgb(154, 246, 154);
+}
+
+.btn__second {
+  position: absolute;
+  cursor: pointer;
+  top: 120px;
+  right: 3%;
   width: 85px;
   height: 40px;
   border: 1px solid gray;
@@ -34,6 +45,7 @@
 }
 
 .filters-radio {
+  font-weight: bold;
   color: red;
 }
 
