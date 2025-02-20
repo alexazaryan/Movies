@@ -7,12 +7,12 @@ import "./MainLayout.css";
 
 export default function Mainlayout() {
   return (
-    <>
+    <div>
       <Header />
       <main className="main-box">
         <Outlet />
       </main>
-      <Footer />
-    </>
+      <Footer className="main-layout_footer" />
+    </div>
   );
 }

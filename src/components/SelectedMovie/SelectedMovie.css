@@ -1,3 +1,7 @@
+.selectedMovie-wrap {
+  margin: 1rem;
+}
+
 .box-img-plot {
   display: flex;
   justify-content: space-between;
@@ -62,4 +66,19 @@
 
 .selectedMovie__box {
   padding-left: 20px;
+}
+
+@media (max-width: 760px) {
+  .box-img-plot {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid red;
+  }
+
+  .selectedMovie__box {
+    margin: 20px;
+  }
 }

@@ -6,7 +6,7 @@ export default function SelectedMovie({ movie }) {
     <div className="selectedMovie-wrap">
       <div className="box-img-plot">
         <div className="selectedMovie-wrap-img-s1">
-          {movie.Poster === "N/A" ? (
+          {movie.Poster === "N/A" ? ( 
             <img className="selected-img-s1" src="../img/photo.jpg" alt="#" />
           ) : (
             <img className="selected-img-s1" src={movie.Poster} alt="#" />

@@ -1,5 +1,10 @@
 .main-box {
   margin: auto;
   width: 950px;
+  height: 100%;
   min-height: 80vh;
+
+  display: flex;
 }
+
+

@@ -2,12 +2,9 @@
   min-width: 965px;
   display: flex;
   justify-content: center;
-  margin: 0px;
   padding: 20px;
   line-height: 65px;
   text-align: center;
   color: white;
   background-color: tomato;
-
-  flex: 2;
 }

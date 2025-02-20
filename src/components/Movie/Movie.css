@@ -1,6 +1,10 @@
 .movie-img-wrap {
-  width: 300px;
+  width: 100%;
   height: 400px;
+}
+
+.link-movie-img-wrap {
+  width: 100%;
 }
 
 .movie-img {
@@ -8,6 +12,7 @@
   border-radius: 15px;
   width: 100%;
   height: 100%;
+  object-fit: cover; /* Картинка растягивается по ширине и высоте контейнера */
 }
 
 .movie-title {
@@ -36,11 +41,12 @@
   border-radius: 15px;
   margin-bottom: 10px;
   background: white;
-
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1),
     0 12px 36px rgba(0, 0, 0, 0.05);
-
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  flex: 0 0 32.2%;
+  margin: 5px;
 }
 
 .movie-box:hover {
@@ -49,4 +55,11 @@
       rgba(0, 0, 0, 0.15),
     /* увеличенный второй оттенок */ 0 16px 48px rgba(0, 0, 0, 0.1); /* увеличенный самый мягкий оттенок */
   transform: translateY(-5px); /* поднятие карточки при наведении */
+}
+
+/* для планшетов */
+@media (max-width: 768px) {
+  .movie-box {
+    flex: 0 0 48%;
+  }
 }
