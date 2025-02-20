@@ -71,11 +71,8 @@
 @media (max-width: 760px) {
   .box-img-plot {
     display: flex;
-
     flex-direction: column;
     align-items: center;
-
-    border: 2px solid red;
   }
 
   .selectedMovie__box {
